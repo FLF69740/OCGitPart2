@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class View extends JFrame {
 	
-	
+	private Model model;
 	
 	public View() {
 		
@@ -17,9 +17,10 @@ public class View extends JFrame {
 		JPanel container = new JPanel();
 		container.setLayout(new BorderLayout());
 		
+		model = new Model();
 		
 		JLabel label1 = new JLabel();
-		label1.setText("MESSAGE");
+		label1.setText(model.getTitle());
 		label1.setHorizontalAlignment(JLabel.CENTER);
 		
 		container.add(label1, BorderLayout.CENTER);
