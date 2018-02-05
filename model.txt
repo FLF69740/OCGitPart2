@@ -1,0 +1,7 @@
+public class Model {
+	
+	public String getTitle() {
+		return "GITHUB";
+	}
+
+}
