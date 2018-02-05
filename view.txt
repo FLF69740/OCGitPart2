@@ -1,0 +1,32 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class View extends JFrame {
+	
+	
+	
+	public View() {
+		
+		this.setSize(400, 400);
+		this.setTitle("Exemple de fenêtre java : cours GitHub");
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+		
+		
+		JPanel container = new JPanel();
+		container.setLayout(new BorderLayout());
+		
+		
+		JLabel label1 = new JLabel();
+		label1.setText("MESSAGE");
+		label1.setHorizontalAlignment(JLabel.CENTER);
+		
+		container.add(label1, BorderLayout.CENTER);
+		
+		this.setContentPane(container);
+		
+		
+	}
+
+}
